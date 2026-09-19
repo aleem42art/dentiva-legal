@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dentiva Privacy Policy</title>
+<meta name="description" content="How the Dentiva dental clinic app, published by Cavitex, handles clinic, patient and health information.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://aleem42art.github.io/dentiva-legal/privacy-policy/">
+<style>
+  :root {
+    --bg: #f6f8f8;
+    --surface: #ffffff;
+    --text: #1b2426;
+    --muted: #5a6769;
+    --border: #dfe5e6;
+    --accent: #0d7068;
+    --accent-soft: #e7f3f1;
+    --accent-line: #b9dcd7;
+    --chip: #eef2f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1415;
+      --surface: #151c1e;
+      --text: #e4ebeb;
+      --muted: #9aa8aa;
+      --border: #273133;
+      --accent: #5cc9bb;
+      --accent-soft: #132b29;
+      --accent-line: #22514b;
+      --chip: #1d2729;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 24px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16.5px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  .masthead {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .masthead-inner, .page {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .masthead-inner { padding-top: 40px; padding-bottom: 32px; }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 650;
+    letter-spacing: .01em;
+    color: var(--accent);
+    font-size: 15px;
+  }
+  .brand-mark {
+    width: 26px; height: 26px;
+    border-radius: 8px;
+    background: var(--accent);
+    display: grid; place-items: center;
+  }
+  .brand-mark svg { width: 16px; height: 16px; fill: var(--surface); }
+  h1 {
+    font-size: clamp(30px, 5vw, 40px);
+    line-height: 1.15;
+    letter-spacing: -.015em;
+    margin: 18px 0 10px;
+  }
+  .meta { color: var(--muted); font-size: 14.5px; margin: 0; }
+  .meta span + span::before { content: "·"; margin: 0 8px; }
+
+  .page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+  @media (min-width: 960px) {
+    .page { grid-template-columns: 230px minmax(0, 720px); gap: 56px; }
+  }
+
+  /* Table of contents */
+  .toc { font-size: 14.5px; }
+  .toc details { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 16px; }
+  .toc summary { cursor: pointer; font-weight: 600; }
+  .toc ol { list-style: none; margin: 10px 0 0; padding: 0; }
+  .toc li { margin: 0; }
+  .toc a {
+    display: block;
+    padding: 5px 0;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .toc a:hover { color: var(--accent); }
+  @media (min-width: 960px) {
+    .toc { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow-y: auto; }
+    .toc details { background: none; border: 0; padding: 0; }
+    .toc summary { list-style: none; pointer-events: none; color: var(--text); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
+    .toc summary::-webkit-details-marker { display: none; }
+    .toc a { padding: 4px 0 4px 12px; border-left: 2px solid var(--border); }
+    .toc a:hover { border-left-color: var(--accent); }
+  }
+
+  /* Content */
+  article { min-width: 0; }
+  .lead { font-size: 18px; margin-top: 0; }
+  .glance {
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-line);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 28px 0 8px;
+  }
+  .glance h2 { margin: 0 0 10px; font-size: 17px; border: 0; padding: 0; }
+  .glance ul { margin: 0; padding-left: 20px; }
+  .glance li { margin: 8px 0; }
+
+  section { padding-top: 12px; }
+  h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: -.005em;
+    margin: 36px 0 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h2 .num { color: var(--accent); margin-right: 8px; font-variant-numeric: tabular-nums; }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  p, ul { margin: 0 0 14px; }
+  li { margin: 6px 0; }
+  strong { font-weight: 620; }
+  code {
+    font: 14px/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace;
+    background: var(--chip);
+    padding: 2px 6px;
+    border-radius: 6px;
+  }
+
+  .note {
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    padding: 12px 16px;
+    border-radius: 0 10px 10px 0;
+    margin: 16px 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 15.5px;
+  }
+  th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: 0; }
+  th { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); background: var(--chip); }
+  td:first-child { font-weight: 600; width: 34%; }
+  @media (max-width: 560px) {
+    table, tbody, tr, td { display: block; width: 100%; }
+    thead { display: none; }
+    tr { border-bottom: 1px solid var(--border); padding: 10px 14px; }
+    tr:last-child { border-bottom: 0; }
+    td { border: 0; padding: 2px 0; }
+    td:first-child { width: 100%; }
+  }
+
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 22px;
+  }
+  .contact p { margin: 4px 0; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer .inner { max-width: 1080px; margin: 0 auto; padding: 20px 16px 32px; }
+
+  @media print {
+    body { background: #fff; color: #000; font-size: 12pt; }
+    .toc, footer { display: none; }
+    .page { display: block; padding: 0; }
+    .masthead { border: 0; }
+    a { color: #000; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 5.2C10.6 4 9 3.4 7.3 3.4 4.4 3.4 2.5 5.6 2.5 8.7c0 2.2.8 3.6 1.5 5.2.7 1.6.9 3.3 1.2 5 .3 1.7 1 2.7 2.1 2.7 1.3 0 1.8-1.3 2.1-3.1.3-1.7.9-3.1 2.6-3.1s2.3 1.4 2.6 3.1c.3 1.8.8 3.1 2.1 3.1 1.1 0 1.8-1 2.1-2.7.3-1.7.5-3.4 1.2-5 .7-1.6 1.5-3 1.5-5.2 0-3.1-1.9-5.3-4.8-5.3-1.7 0-3.3.6-4.7 1.8z"/></svg>
+      </span>
+      Dentiva
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="meta"><span>Effective 20 September 2026</span><span>Last updated 20 September 2026</span></p>
+  </div>
+</header>
+
+<div class="page">
+  <nav class="toc" aria-label="Contents">
+    <details id="toc-details">
+      <summary>Contents</summary>
+      <ol>
+        <li><a href="#who-we-are">1. Who we are</a></li>
+        <li><a href="#roles">2. Your clinic's role and ours</a></li>
+        <li><a href="#information">3. Information the app handles</a></li>
+        <li><a href="#use">4. How information is used</a></li>
+        <li><a href="#storage">5. Where information is stored</a></li>
+        <li><a href="#backups">6. Backups</a></li>
+        <li><a href="#sharing">7. When information leaves the device</a></li>
+        <li><a href="#google">8. Google user data</a></li>
+        <li><a href="#permissions">9. Device permissions</a></li>
+        <li><a href="#security">10. Security</a></li>
+        <li><a href="#retention">11. Retention and deletion</a></li>
+        <li><a href="#rights">12. Your rights and choices</a></li>
+        <li><a href="#children">13. Children</a></li>
+        <li><a href="#transfers">14. International transfers</a></li>
+        <li><a href="#changes">15. Changes to this policy</a></li>
+        <li><a href="#contact">16. Contact us</a></li>
+      </ol>
+    </details>
+  </nav>
+
+  <article>
+    <p class="lead">Dentiva is a dental clinic management app published by <strong>Cavitex</strong> (“Cavitex”, “we”, “us”). This policy explains what information the app handles, where it is kept, when it leaves your device, and the choices you have. It applies to the Dentiva app on Android and on desktop.</p>
+
+    <div class="glance">
+      <h2>At a glance</h2>
+      <ul>
+        <li><strong>Your clinic's records stay on your device.</strong> Cavitex does not run servers that receive them, and we cannot see your patients' information.</li>
+        <li><strong>No advertising, analytics or tracking.</strong> The app contains no advertising, analytics or crash-reporting services.</li>
+        <li><strong>Cloud backup is optional and encrypted.</strong> If you turn on Google Drive backup, each backup is encrypted on your device before upload and stored in a private app folder in your own Google Drive.</li>
+        <li><strong>Information is shared only when you choose.</strong> For example, when you send an invoice over WhatsApp or save a PDF.</li>
+        <li><strong>We never sell data.</strong></li>
+      </ul>
+    </div>
+
+    <section id="who-we-are">
+      <h2><span class="num">1.</span>Who we are</h2>
+      <p>Dentiva is developed and published by Cavitex. If you have any question about this policy or about how Dentiva handles information, contact us at <a href="mailto:aleem42@gmail.com?subject=Dentiva%20privacy">aleem42@gmail.com</a>.</p>
+    </section>
+
+    <section id="roles">
+      <h2><span class="num">2.</span>Your clinic's role and ours</h2>
+      <p>Dentiva is a tool that dental clinics use to keep their own records. The clinic (the dentist or practice using the app) decides what patient information to record, why, and for how long. The clinic is responsible for that information and for following the health-record, privacy and professional rules that apply to it, including getting any patient consent those rules require.</p>
+      <p>Cavitex provides the software. Dentiva works offline and stores records on the clinic's own devices, so Cavitex does not receive, host or process patient records, and we have no technical means to view them.</p>
+    </section>
+
+    <section id="information">
+      <h2><span class="num">3.</span>Information the app handles</h2>
+      <p>Clinic staff enter this information, or the app creates it as it is used. Unless <a href="#sharing">section 7</a> says otherwise, it stays on the device.</p>
+
+      <h3>3.1 Clinic and staff accounts</h3>
+      <p>Clinic name, address and registration details (such as a PMDC number); each staff member's name, login ID and role (for example, doctor or assistant); an optional profile photo; optional details such as age, gender and nationality; and passwords and security-question answers. Passwords and answers are never stored in readable form. They are salted, hashed with PBKDF2-HMAC-SHA256 and kept in the operating system's protected storage.</p>
+
+      <h3>3.2 Patient information, including health information</h3>
+      <p>Identity and contact details (name, age, gender, phone number, email and address); medical history, allergies, drug allergies, blood group and medical notes; dental charts, diagnoses, treatment plans, procedures, prescriptions, clinical notes and laboratory cases; and appointments and visit history. This is sensitive health information and must be treated as confidential.</p>
+
+      <h3>3.3 Billing and payment records</h3>
+      <p>Fees, invoices, payments, instalments and outstanding balances. Dentiva records payments the clinic receives. It does not process card payments or collect bank or card details.</p>
+
+      <h3>3.4 Photos, radiographs and documents</h3>
+      <p>Clinical photos taken with the camera, and images or files the clinic selects on the device, such as radiographs. The app also creates PDF documents such as invoices, treatment reports and clinic summaries.</p>
+
+      <h3>3.5 Google account information (only if you use Google Drive backup)</h3>
+      <p>When you connect a Google account for backup, Google Sign-In gives Dentiva the account's email address, name and profile picture. Dentiva uses them only to show which account is connected, and stores the email address on the device for that purpose. See <a href="#google">section 8</a>.</p>
+
+      <h3>3.6 Technical information</h3>
+      <p>A random identifier created when the app is first installed, used to keep invoice numbers and records from different devices apart; and the app's settings and preferences. These stay on the device and inside its backups.</p>
+
+      <h3>3.7 Information we do not collect</h3>
+      <p>Dentiva does not collect location, contacts, call logs, SMS messages or browsing activity, and does not use the microphone. It does not include advertising, analytics or crash-reporting services. Fingerprint and face data never reach the app: the device checks them and tells Dentiva only whether the check succeeded.</p>
+    </section>
+
+    <section id="use">
+      <h2><span class="num">4.</span>How information is used</h2>
+      <p>The app uses this information only to provide its features to the clinic: keeping patient and treatment records; scheduling appointments and reminders; producing invoices, prescriptions and reports; signing staff in and applying their roles; and making and restoring backups.</p>
+      <p>Cavitex does not use clinic or patient information for advertising, profiling or any purpose of its own, and does not sell it.</p>
+    </section>
+
+    <section id="storage">
+      <h2><span class="num">5.</span>Where information is stored</h2>
+      <p>Records are kept in a database in Dentiva's private storage on the device. Android keeps this storage separate from other apps, and the device's own storage encryption protects it while the device is locked. Dentiva does not add a separate encryption layer to this database.</p>
+      <p>Android's automatic cloud backup of app data is turned off for Dentiva, so the operating system does not copy the database to Google.</p>
+      <p class="note">We strongly recommend protecting every clinic device with a screen lock and keeping it up to date.</p>
+    </section>
+
+    <section id="backups">
+      <h2><span class="num">6.</span>Backups</h2>
+
+      <h3>6.1 Backups on the device</h3>
+      <p>Dentiva can back up the clinic's data automatically and on request. Backups are saved in the app's private storage, or in a folder you choose with Android's folder picker. Dentiva gets access only to the folder you choose, not to your other files. Automatic backups are trimmed to the newest 10, plus the newest one from each of the last 7 days. Manual exports, and the safety copy made before a restore, are kept until you delete them.</p>
+      <p><strong>Dentiva does not encrypt local backup files and exports.</strong> They contain full patient records, so store and share them as carefully as the records themselves. Backups in the app's private storage are removed when the app is uninstalled; backups in a folder you chose stay there.</p>
+
+      <h3>6.2 Google Drive backup (optional)</h3>
+      <p>If you connect a Google account, Dentiva can also upload backups to Google Drive.</p>
+      <ul>
+        <li><strong>Encrypted before upload.</strong> Each backup is compressed and encrypted on your device with AES-256-GCM. The encryption key is not uploaded, and neither Cavitex nor Google can read the contents.</li>
+        <li><strong>Private app folder.</strong> Backups are stored in the hidden app-data folder of your own Google Drive. Dentiva asks only for access to that folder (the <code>drive.appdata</code> permission), so it cannot see or change any other file in your Drive, and other apps cannot see Dentiva's backups.</li>
+        <li><strong>Limited label information.</strong> Each backup file carries some unencrypted details needed to list and restore it: when it was made, the app and database versions, and how many patient records and attachments it contains. No names or clinical details are included.</li>
+        <li><strong>Five backups kept.</strong> Dentiva keeps the five most recent Drive backups and deletes older ones automatically.</li>
+        <li><strong>You stay in control.</strong> You can disconnect the account, or delete all Dentiva backups from Drive in the app, at any time.</li>
+      </ul>
+
+      <h3>6.3 Recovery key</h3>
+      <p>You can create a recovery key so that Drive backups can be restored on a new device or after reinstalling Dentiva. The key is shown once, and Cavitex never receives a copy, so we cannot recover it for you. Without a recovery key, Drive backups can be restored only on the device that made them, and only while Dentiva stays installed on it.</p>
+      <p>Keep the key private. Anyone who has both your recovery key and access to your Google account could decrypt your backups.</p>
+    </section>
+
+    <section id="sharing">
+      <h2><span class="num">7.</span>When information leaves the device</h2>
+      <p>Information leaves the device only in the cases below, and each one is started by a person using the app.</p>
+      <ul>
+        <li><strong>Google Drive backup:</strong> encrypted, as described in <a href="#backups">section 6.2</a>.</li>
+        <li><strong>Sending documents and messages:</strong> when you send an invoice, a treatment report or a message, Dentiva passes it to the app you choose (for example WhatsApp, email or a printer) through the device's share or print feature. You choose the recipient and confirm the send in that app. After that, the information is handled by that app and the recipient under their own terms.</li>
+        <li><strong>Exporting backups:</strong> to a location you choose, as described in <a href="#backups">section 6.1</a>.</li>
+        <li><strong>Contacting us:</strong> if you email us, including from the in-app Feedback screen, we receive your email address and what you write. The Feedback screen can add basic diagnostics (app version, platform and database version). You can see them before sending and switch them off. Please do not include patient information in support emails.</li>
+      </ul>
+      <p>Cavitex does not sell, rent or share information with advertisers or data brokers. We would disclose information we hold, such as a support email, only if the law requires it.</p>
+    </section>
+
+    <section id="google">
+      <h2><span class="num">8.</span>Google user data</h2>
+      <p>Dentiva's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      <p>Dentiva uses Google Sign-In and the Google Drive API only to store, list, download and delete the clinic's own encrypted backups in the app-data folder of the connected account. This data is not transferred to Cavitex or anyone else, is not used for advertising, and is not read by people.</p>
+      <p>You can remove Dentiva's access at any time from your Google Account's <a href="https://myaccount.google.com/connections">Third-party apps &amp; services</a> page. You can delete Dentiva's hidden backup data in Google Drive under <em>Settings → Manage apps</em>.</p>
+    </section>
+
+    <section id="permissions">
+      <h2><span class="num">9.</span>Device permissions</h2>
+      <p>Dentiva asks for a permission only when a feature needs it.</p>
+      <table>
+        <thead><tr><th>Permission</th><th>Why Dentiva asks</th></tr></thead>
+        <tbody>
+          <tr><td>Camera</td><td>To take clinical photos when you tap the camera button.</td></tr>
+          <tr><td>Photos and files</td><td>Through Android's photo and document pickers, Dentiva receives only the items you select. It does not ask for access to your whole photo library or storage.</td></tr>
+          <tr><td>Biometrics</td><td>Optional fingerprint or face unlock for staff sign-in.</td></tr>
+          <tr><td>Notifications</td><td>Reminders about upcoming appointments, overdue invoices and lab cases that are due.</td></tr>
+          <tr><td>Alarms &amp; reminders</td><td>So that reminders arrive at the scheduled time.</td></tr>
+          <tr><td>Run at startup</td><td>To set scheduled reminders again after the device restarts.</td></tr>
+          <tr><td>Internet</td><td>For Google Drive backup and to open links you tap.</td></tr>
+        </tbody>
+      </table>
+      <p>You can deny or withdraw any permission in the device settings. The related feature stops working; your records are not affected.</p>
+      <p class="note">Reminder notifications can include a patient's name. If other people can see the device, use Android's lock-screen notification settings to hide notification content.</p>
+    </section>
+
+    <section id="security">
+      <h2><span class="num">10.</span>Security</h2>
+      <p>Dentiva is designed to protect the records it holds:</p>
+      <ul>
+        <li>Passwords and security answers are salted and hashed, and kept in the operating system's protected storage.</li>
+        <li>Repeated failed sign-ins bring increasing waits and temporary lockouts.</li>
+        <li>Staff roles limit what each person can do.</li>
+        <li>Optional biometric unlock is tied to the account that turned it on.</li>
+        <li>Google Drive backups are encrypted on the device and sent over encrypted (HTTPS) connections.</li>
+        <li>Backups are checked for integrity before they are restored.</li>
+        <li>The app is designed not to write patient information or passwords to its logs.</li>
+      </ul>
+      <p>No system is perfectly secure. How well records on a device are protected also depends on the clinic: use a screen lock, keep devices updated, give each staff member their own account, and keep backup files and your recovery key safe.</p>
+    </section>
+
+    <section id="retention">
+      <h2><span class="num">11.</span>Retention and deletion</h2>
+      <p>Records stay on the device until the clinic deletes them. Dentiva provides these controls:</p>
+      <ul>
+        <li><strong>Deleting a patient</strong> removes the patient and their records from every screen, search and report. So that deletions stay consistent across backups and devices, the deleted entries are kept on the device marked as deleted, and can appear inside backup files made afterwards. A factory reset erases them permanently.</li>
+        <li><strong>Removing a staff member</strong> deletes their sign-in credentials from the device.</li>
+        <li><strong>Factory reset</strong> (in Settings) permanently erases all Dentiva data on the device: records, staff accounts, credentials, settings, photos and files.</li>
+        <li><strong>Uninstalling Dentiva</strong> removes its private data from the device. Backups saved to a folder you chose, and backups in Google Drive, are not removed by uninstalling.</li>
+        <li><strong>Google Drive backups</strong> can be deleted in the app, or in Google Drive under <em>Settings → Manage apps</em>.</li>
+      </ul>
+      <p>Dentiva has no online accounts. Staff accounts exist only on the clinic's devices, so there is no online account for us to delete; everything is removed with the controls above.</p>
+      <p>Emails you send us are kept for as long as we need them to help you and to keep a record of support history. We delete them on request.</p>
+    </section>
+
+    <section id="rights">
+      <h2><span class="num">12.</span>Your rights and choices</h2>
+      <h3>Patients</h3>
+      <p>The clinic that treats you controls your records. To see, correct, get a copy of, or delete your information, contact your clinic. Cavitex cannot access your records, so we cannot carry out these requests ourselves, but we will help any clinic that asks us how.</p>
+      <h3>Clinics and staff</h3>
+      <p>You can view, correct, export and delete records directly in the app. Depending on where you are, data-protection law may give you further rights over information we hold about you, such as your support emails. Contact us to use them; we reply within 30 days.</p>
+    </section>
+
+    <section id="children">
+      <h2><span class="num">13.</span>Children</h2>
+      <p>Dentiva is a professional tool for dental clinics and is not intended for use by children. Clinics may record information about patients who are children; the clinic is responsible for getting any consent a parent or guardian must give.</p>
+    </section>
+
+    <section id="transfers">
+      <h2><span class="num">14.</span>International transfers</h2>
+      <p>Cavitex does not transfer clinic or patient data anywhere. If you use Google Drive backup, Google may store the encrypted backups in data centres in other countries, under <a href="https://policies.google.com/privacy">Google's own privacy policy</a>.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span class="num">15.</span>Changes to this policy</h2>
+      <p>We may update this policy as Dentiva changes. We will post the new version on this page and change the “Last updated” date. If a change affects how the app handles information, we will also describe it in the app's release notes.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="num">16.</span>Contact us</h2>
+      <div class="contact">
+        <p><strong>Cavitex</strong>, developer of Dentiva</p>
+        <p>Email: <a href="mailto:aleem42@gmail.com?subject=Dentiva%20privacy">aleem42@gmail.com</a></p>
+        <p style="color: var(--muted); font-size: 14.5px; margin-top: 8px;">Please put “Dentiva privacy” in the subject line.</p>
+      </div>
+    </section>
+  </article>
+</div>
+
+<footer>
+  <div class="inner">© 2026 Cavitex · <a href="../">Dentiva legal</a></div>
+</footer>
+
+<script>
+  // The contents list is a sidebar on wide screens and a collapsed panel on phones.
+  (function () {
+    var details = document.getElementById('toc-details');
+    var wide = window.matchMedia('(min-width: 960px)');
+    function sync() { details.open = wide.matches; }
+    sync();
+    if (wide.addEventListener) wide.addEventListener('change', sync);
+  })();
+</script>
+
+</body>
+</html>
