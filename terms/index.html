@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dentiva Terms of Service</title>
+<meta name="description" content="The terms for using Dentiva, the dental clinic management app published by Cavitex.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://aleem42art.github.io/dentiva-legal/terms/">
+<style>
+  :root {
+    --bg: #f6f8f8;
+    --surface: #ffffff;
+    --text: #1b2426;
+    --muted: #5a6769;
+    --border: #dfe5e6;
+    --accent: #0d7068;
+    --accent-soft: #e7f3f1;
+    --accent-line: #b9dcd7;
+    --chip: #eef2f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1415;
+      --surface: #151c1e;
+      --text: #e4ebeb;
+      --muted: #9aa8aa;
+      --border: #273133;
+      --accent: #5cc9bb;
+      --accent-soft: #132b29;
+      --accent-line: #22514b;
+      --chip: #1d2729;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 24px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16.5px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  .masthead {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .masthead-inner, .page {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .masthead-inner { padding-top: 40px; padding-bottom: 32px; }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 650;
+    letter-spacing: .01em;
+    color: var(--accent);
+    font-size: 15px;
+  }
+  .brand-mark {
+    width: 26px; height: 26px;
+    border-radius: 8px;
+    background: var(--accent);
+    display: grid; place-items: center;
+  }
+  .brand-mark svg { width: 16px; height: 16px; fill: var(--surface); }
+  h1 {
+    font-size: clamp(30px, 5vw, 40px);
+    line-height: 1.15;
+    letter-spacing: -.015em;
+    margin: 18px 0 10px;
+  }
+  .meta { color: var(--muted); font-size: 14.5px; margin: 0; }
+  .meta span + span::before { content: "·"; margin: 0 8px; }
+
+  .page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+  @media (min-width: 960px) {
+    .page { grid-template-columns: 230px minmax(0, 720px); gap: 56px; }
+  }
+
+  /* Table of contents */
+  .toc { font-size: 14.5px; }
+  .toc details { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 16px; }
+  .toc summary { cursor: pointer; font-weight: 600; }
+  .toc ol { list-style: none; margin: 10px 0 0; padding: 0; }
+  .toc li { margin: 0; }
+  .toc a {
+    display: block;
+    padding: 5px 0;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .toc a:hover { color: var(--accent); }
+  @media (min-width: 960px) {
+    .toc { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow-y: auto; }
+    .toc details { background: none; border: 0; padding: 0; }
+    .toc summary { list-style: none; pointer-events: none; color: var(--text); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
+    .toc summary::-webkit-details-marker { display: none; }
+    .toc a { padding: 4px 0 4px 12px; border-left: 2px solid var(--border); }
+    .toc a:hover { border-left-color: var(--accent); }
+  }
+
+  /* Content */
+  article { min-width: 0; }
+  .lead { font-size: 18px; margin-top: 0; }
+  .glance {
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-line);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 28px 0 8px;
+  }
+  .glance h2 { margin: 0 0 10px; font-size: 17px; border: 0; padding: 0; }
+  .glance ul { margin: 0; padding-left: 20px; }
+  .glance li { margin: 8px 0; }
+
+  section { padding-top: 12px; }
+  h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: -.005em;
+    margin: 36px 0 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h2 .num { color: var(--accent); margin-right: 8px; font-variant-numeric: tabular-nums; }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  p, ul { margin: 0 0 14px; }
+  li { margin: 6px 0; }
+  strong { font-weight: 620; }
+  code {
+    font: 14px/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace;
+    background: var(--chip);
+    padding: 2px 6px;
+    border-radius: 6px;
+  }
+
+  .note {
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    padding: 12px 16px;
+    border-radius: 0 10px 10px 0;
+    margin: 16px 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 15.5px;
+  }
+  th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: 0; }
+  th { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); background: var(--chip); }
+  td:first-child { font-weight: 600; width: 34%; }
+  @media (max-width: 560px) {
+    table, tbody, tr, td { display: block; width: 100%; }
+    thead { display: none; }
+    tr { border-bottom: 1px solid var(--border); padding: 10px 14px; }
+    tr:last-child { border-bottom: 0; }
+    td { border: 0; padding: 2px 0; }
+    td:first-child { width: 100%; }
+  }
+
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 22px;
+  }
+  .contact p { margin: 4px 0; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer .inner { max-width: 1080px; margin: 0 auto; padding: 20px 16px 32px; }
+
+  @media print {
+    body { background: #fff; color: #000; font-size: 12pt; }
+    .toc, footer { display: none; }
+    .page { display: block; padding: 0; }
+    .masthead { border: 0; }
+    a { color: #000; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 5.2C10.6 4 9 3.4 7.3 3.4 4.4 3.4 2.5 5.6 2.5 8.7c0 2.2.8 3.6 1.5 5.2.7 1.6.9 3.3 1.2 5 .3 1.7 1 2.7 2.1 2.7 1.3 0 1.8-1.3 2.1-3.1.3-1.7.9-3.1 2.6-3.1s2.3 1.4 2.6 3.1c.3 1.8.8 3.1 2.1 3.1 1.1 0 1.8-1 2.1-2.7.3-1.7.5-3.4 1.2-5 .7-1.6 1.5-3 1.5-5.2 0-3.1-1.9-5.3-4.8-5.3-1.7 0-3.3.6-4.7 1.8z"/></svg>
+      </span>
+      Dentiva
+    </div>
+    <h1>Terms of Service</h1>
+    <p class="meta"><span>Effective 20 September 2026</span><span>Last updated 20 September 2026</span></p>
+  </div>
+</header>
+
+<div class="page">
+  <nav class="toc" aria-label="Contents">
+    <details id="toc-details">
+      <summary>Contents</summary>
+      <ol>
+        <li><a href="#agreement">1. This agreement</a></li>
+        <li><a href="#licence">2. Your licence to use Dentiva</a></li>
+        <li><a href="#responsibilities">3. What the clinic is responsible for</a></li>
+        <li><a href="#clinical">4. Clinical judgement</a></li>
+        <li><a href="#records">5. Records, backups and loss</a></li>
+        <li><a href="#google">6. Google Drive backup</a></li>
+        <li><a href="#third-party">7. Other apps and services</a></li>
+        <li><a href="#price">8. Price and updates</a></li>
+        <li><a href="#warranty">9. No warranty</a></li>
+        <li><a href="#liability">10. Limits on liability</a></li>
+        <li><a href="#ending">11. Ending this agreement</a></li>
+        <li><a href="#changes">12. Changes to these terms</a></li>
+        <li><a href="#law">13. Governing law</a></li>
+        <li><a href="#contact">14. Contact</a></li>
+      </ol>
+    </details>
+  </nav>
+
+  <article>
+    <p class="lead">These terms govern your use of <strong>Dentiva</strong>, a dental clinic management app published by <strong>Cavitex</strong> (“Cavitex”, “we”, “us”). By installing or using Dentiva you agree to them. If you do not agree, do not use the app.</p>
+
+    <div class="glance">
+      <h2>At a glance</h2>
+      <ul>
+        <li><strong>Dentiva is a record-keeping tool, not a clinician.</strong> Every clinical decision stays with the treating dentist.</li>
+        <li><strong>Your records are yours.</strong> They live on your device; we cannot see them and we never sell them.</li>
+        <li><strong>Backups are your responsibility.</strong> Devices are lost and break. Keep exported backups somewhere safe.</li>
+        <li><strong>You must follow the rules that apply to your practice</strong> — patient consent, record keeping and health-data law where you work.</li>
+        <li><strong>The app is provided as it is</strong>, without a warranty that it will suit a particular practice.</li>
+      </ul>
+    </div>
+
+    <section id="agreement">
+      <h2><span class="num">1.</span>This agreement</h2>
+      <p>This agreement is between Cavitex and the clinic, practitioner or organisation using Dentiva. If you accept these terms for a clinic, you confirm you may do so on its behalf, and “you” means that clinic.</p>
+      <p>Our <a href="../privacy-policy/">Privacy Policy</a> explains how information is handled and forms part of this agreement.</p>
+    </section>
+
+    <section id="licence">
+      <h2><span class="num">2.</span>Your licence to use Dentiva</h2>
+      <p>We give you a personal, non-exclusive, non-transferable licence to install and use Dentiva on devices you control, for running your dental practice. You may not sell, rent, sublicense or redistribute the app, or attempt to decompile or reverse engineer it except where the law expressly allows it.</p>
+      <p>Dentiva, its name and its design remain ours. Nothing here transfers ownership of the software to you.</p>
+    </section>
+
+    <section id="responsibilities">
+      <h2><span class="num">3.</span>What the clinic is responsible for</h2>
+      <ul>
+        <li>The accuracy of everything entered into the app, and the care of the records it holds.</li>
+        <li>Following the health-record, privacy, professional and consumer rules that apply where you practise, including getting any patient consent they require.</li>
+        <li>Keeping devices secure: a screen lock, current updates, and a separate account for each staff member.</li>
+        <li>Who you give access to, and what you send from the app to patients or laboratories.</li>
+      </ul>
+    </section>
+
+    <section id="clinical">
+      <h2><span class="num">4.</span>Clinical judgement</h2>
+      <p>Dentiva records what you tell it. It does not diagnose, prescribe, or decide treatment, and nothing it displays — including fee suggestions, reminders or reports — is medical or dental advice. Every clinical decision, and every document you send a patient, remains the treating dentist's responsibility.</p>
+    </section>
+
+    <section id="records">
+      <h2><span class="num">5.</span>Records, backups and loss</h2>
+      <p>Dentiva keeps records on your device. It is not a hosted service, and we hold no copy of your data. That means we cannot restore anything for you.</p>
+      <p>Export backups regularly and keep them somewhere safe. Uninstalling the app, resetting it, or losing the device destroys the records on it. Local backup files are not encrypted, so store them as carefully as the records themselves.</p>
+    </section>
+
+    <section id="google">
+      <h2><span class="num">6.</span>Google Drive backup</h2>
+      <p>Drive backup is optional and off until you turn it on. When you do, encrypted copies of your data are stored in your own Google account, under Google's terms. The encryption key stays on the device that made the backup, so a Drive backup can be restored on that device only.</p>
+      <p>You can disconnect at any time in Backup &amp; Data, and remove Dentiva's access from your Google Account settings.</p>
+    </section>
+
+    <section id="third-party">
+      <h2><span class="num">7.</span>Other apps and services</h2>
+      <p>When you send an invoice, message or report, Dentiva hands it to an app you choose — WhatsApp, an email app, a printer, a file manager. What happens next is governed by that app's own terms, not ours.</p>
+    </section>
+
+    <section id="price">
+      <h2><span class="num">8.</span>Price and updates</h2>
+      <p>Where Dentiva is offered free of charge, we may change that in future; a change will never apply retroactively to a version you already installed. We may publish updates that add, change or remove features. Updates that materially change how the app handles information are described in the release notes.</p>
+    </section>
+
+    <section id="warranty">
+      <h2><span class="num">9.</span>No warranty</h2>
+      <p>Dentiva is provided “as is” and “as available”. To the extent the law allows, we make no warranty that it will be uninterrupted, error-free, or fit for a particular practice or purpose.</p>
+      <p>Some consumer laws give rights that cannot be excluded. Nothing here limits those rights.</p>
+    </section>
+
+    <section id="liability">
+      <h2><span class="num">10.</span>Limits on liability</h2>
+      <p>To the extent the law allows, Cavitex is not liable for lost records, lost profits, lost goodwill, or indirect or consequential loss arising from your use of Dentiva. Our total liability for any claim is limited to the amount you paid us for the app in the twelve months before the claim.</p>
+      <p>Nothing in these terms excludes liability for death or personal injury caused by negligence, for fraud, or for anything else that cannot lawfully be excluded.</p>
+    </section>
+
+    <section id="ending">
+      <h2><span class="num">11.</span>Ending this agreement</h2>
+      <p>You may stop using Dentiva at any time by uninstalling it. We may end this licence if you breach these terms. When it ends, your right to use the app stops; the records on your device remain yours.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span class="num">12.</span>Changes to these terms</h2>
+      <p>We may update these terms as the app changes. The current version is always on this page, with the date it was last updated. Continuing to use Dentiva after a change means you accept it.</p>
+    </section>
+
+    <section id="law">
+      <h2><span class="num">13.</span>Governing law</h2>
+      <p>These terms are governed by the laws of Pakistan, and the courts of Pakistan have jurisdiction, unless the consumer law where you live gives you the right to bring a claim in your own country.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="num">14.</span>Contact</h2>
+      <div class="contact">
+        <p><strong>Cavitex</strong>, developer of Dentiva</p>
+        <p>Email: <a href="mailto:cavitexdental@gmail.com?subject=Dentiva%20terms">cavitexdental@gmail.com</a></p>
+        <p style="color: var(--muted); font-size: 14.5px; margin-top: 8px;">Please put “Dentiva terms” in the subject line.</p>
+      </div>
+    </section>
+  </article>
+</div>
+
+<footer>
+  <div class="inner">© 2026 Cavitex · <a href="../">Dentiva legal</a> · <a href="../privacy-policy/">Privacy Policy</a></div>
+</footer>
+
+<script>
+  // The contents list is a sidebar on wide screens and a collapsed panel on phones.
+  (function () {
+    var details = document.getElementById('toc-details');
+    var wide = window.matchMedia('(min-width: 960px)');
+    function sync() { details.open = wide.matches; }
+    sync();
+    if (wide.addEventListener) wide.addEventListener('change', sync);
+  })();
+</script>
+
+</body>
+</html>
