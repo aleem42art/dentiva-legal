@@ -213,7 +213,7 @@
       Dentiva
     </div>
     <h1>Privacy Policy</h1>
-    <p class="meta"><span>Effective 20 September 2026</span><span>Last updated 15 October 2026</span></p>
+    <p class="meta"><span>Effective 20 September 2026</span><span>Last updated 16 October 2026</span></p>
   </div>
 </header>
 
@@ -310,23 +310,25 @@
       <h2><span class="num">6.</span>Backups</h2>
 
       <h3>6.1 Backups on the device</h3>
-      <p>Dentiva can back up the clinic's data automatically and on request. Backups are saved in the app's private storage, or in a folder you choose with Android's folder picker. Dentiva gets access only to the folder you choose, not to your other files. Automatic backups are trimmed to the newest 10, plus the newest one from each of the last 7 days. Manual exports, and the safety copy made before a restore, are kept until you delete them.</p>
-      <p><strong>Dentiva does not encrypt local backup files and exports.</strong> They contain full patient records, so store and share them as carefully as the records themselves. Backups in the app's private storage are removed when the app is uninstalled; backups in a folder you chose stay there.</p>
+      <p>Dentiva can back up the clinic's data automatically and on request. Backups are saved in the app's private storage, or in a folder you choose with Android's folder picker. Dentiva gets access only to the folder you choose, not to your other files.</p>
+      <p><strong>What a backup contains.</strong> Every backup you make yourself contains the clinic's records and its clinical photos, radiographs and prescription images. Automatic backups contain the records, and the first automatic backup each day also contains the images. If the images come to more than 200 MB, the backup contains the records only and the app tells you so; keep a separate copy of the images while that is the case.</p>
+      <p>Automatic backups without images are trimmed to the newest 10, plus the newest one from each of the last 7 days. Daily backups with images are kept separately: the newest one from each of the last 7 days, and always the most recent one. Manual exports, and the safety copy made before a restore, are kept until you delete them.</p>
+      <p><strong>Dentiva does not encrypt local backup files and exports.</strong> They contain full patient records and images, so store and share them as carefully as the records themselves. Backups in the app's private storage are removed when the app is uninstalled; backups in a folder you chose stay there.</p>
 
       <h3>6.2 Google Drive backup (optional)</h3>
       <p>Drive backup is off until you turn it on. Setup asks whether the clinic should stay on this device only or also back up to Google Drive, and explains what that means before Dentiva contacts Google at all. If you keep it off, the app never signs in to Google. You can change the answer at any time in Backup &amp; Data, and disconnecting stops Dentiva contacting Google on that device.</p>
-      <p>If you connect a Google account, Dentiva can also upload backups to Google Drive.</p>
+      <p>If you connect a Google account, Dentiva can also upload backups to Google Drive. They contain the same things as backups on the device: the images go in every backup you make yourself and in the first automatic backup each day, as described in <a href="#backups">section 6.1</a>.</p>
       <ul>
         <li><strong>Encrypted before upload.</strong> Each backup is compressed and encrypted on your device with AES-256-GCM. The encryption key is not uploaded, and neither Cavitex nor Google can read the contents.</li>
         <li><strong>Private app folder.</strong> Backups are stored in the hidden app-data folder of your own Google Drive. Dentiva asks only for access to that folder (the <code>drive.appdata</code> permission), so it cannot see or change any other file in your Drive, and other apps cannot see Dentiva's backups.</li>
         <li><strong>Limited label information.</strong> Each backup file carries some unencrypted details needed to list and restore it: when it was made, the app and database versions, and how many patient records and attachments it contains. No names or clinical details are included.</li>
-        <li><strong>Five backups kept.</strong> Dentiva keeps the five most recent Drive backups and deletes older ones automatically.</li>
+        <li><strong>Limited history kept.</strong> Dentiva keeps the five most recent Drive backups without images and, separately, the newest backup with images from each of the last 7 days (and always the most recent one). Older backups are deleted automatically. Backups with images take more of your Google storage.</li>
         <li><strong>You stay in control.</strong> You can disconnect the account, or delete all Dentiva backups from Drive in the app, at any time.</li>
       </ul>
 
       <h3>6.3 Restoring a Drive backup</h3>
       <p>The key that encrypts Drive backups is created on the device and never leaves it. A Drive backup can therefore be restored only on the device that made it, and only while Dentiva stays installed on that device. It is not a way to move a clinic to a new phone or to recover from a lost device.</p>
-      <p>For those, use the app's own backup file: export it from Backup &amp; Data and keep it somewhere safe. A portable recovery key for Drive backups is planned; this page will say so when it ships.</p>
+      <p>For those, use the app's own backup file: export it from Backup &amp; Data and keep it somewhere safe. It contains the records and the clinic's images, and restoring it on the new device brings back both. A backup without images restores the records only: images already on that device are kept, and the app says how many will need to be captured again. A portable recovery key for Drive backups is planned; this page will say so when it ships.</p>
     </section>
 
     <section id="sharing">
