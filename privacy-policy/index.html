@@ -213,7 +213,7 @@
       Dentiva
     </div>
     <h1>Privacy Policy</h1>
-    <p class="meta"><span>Effective 20 September 2026</span><span>Last updated 16 October 2026</span></p>
+    <p class="meta"><span>Effective 20 September 2026</span><span>Last updated 17 October 2026</span></p>
   </div>
 </header>
 
@@ -329,7 +329,7 @@
 
       <h3>6.3 Restoring a Drive backup</h3>
       <p>The key that encrypts Drive backups is created on the device and never leaves it. A Drive backup can therefore be restored only on the device that made it, and only while Dentiva stays installed on that device. It is not a way to move a clinic to a new phone or to recover from a lost device.</p>
-      <p>For those, use the app's own backup file: export it from Backup &amp; Data and keep it somewhere safe. It contains the records and the clinic's images, and restoring it on the new device brings back both. A backup without images restores the records only: images already on that device are kept, and the app says how many will need to be captured again. A portable recovery key for Drive backups is planned; this page will say so when it ships.</p>
+      <p>For those, use the app's own backup file: export it from Backup &amp; Data and keep it somewhere safe. It contains the records and the clinic's images, and restoring it on the new device brings back both. A backup without images restores the records only: images already on that device are kept, and the app says how many will need to be captured again. A backup does not contain staff profiles or passwords: on a new device, set up a dentist profile first, restore the backup, then add the other staff again. A portable recovery key for Drive backups is planned; this page will say so when it ships.</p>
     </section>
 
     <section id="sharing">
@@ -382,6 +382,7 @@
         <li>Backups are checked for integrity before they are restored.</li>
         <li>The app is designed not to write patient information or passwords to its logs.</li>
       </ul>
+      <p>If every staff profile on a device is lost, nobody can sign in, and Dentiva offers to set up a dentist profile again, keeping the records on the device. It cannot ask for a password first, because there is no profile left to check one against, so anyone using the device can do this. It is offered only when the device has no staff profiles at all.</p>
       <p>No system is perfectly secure. How well records on a device are protected also depends on the clinic: use a screen lock, keep devices updated, give each staff member their own account, and keep exported backup files safe.</p>
     </section>
 
@@ -393,7 +394,8 @@
         <li><strong>Deleting a radiograph or photo</strong> deletes its image from the device.</li>
         <li><strong>Removing a staff member</strong> deletes their sign-in credentials from the device.</li>
         <li><strong>Factory reset</strong> (in Settings) permanently erases all Dentiva data on the device: records, staff accounts, credentials, settings, photos and files, including the copy of the records Dentiva keeps while it updates its database. Backups saved to a folder you chose, and backups in Google Drive, are not removed by a factory reset.</li>
-        <li><strong>Uninstalling Dentiva</strong> on Android removes its private data from the device. On Windows, uninstalling leaves Dentiva's folder (<code>%LOCALAPPDATA%\Dentiva</code>) in place, so a reinstall finds the records again; to erase them, run a factory reset before uninstalling, or delete that folder. Backups saved to a folder you chose, and backups in Google Drive, are not removed by uninstalling.</li>
+        <li><strong>Uninstalling Dentiva</strong> on Android removes its private data from the device. On Windows, uninstalling asks whether to remove Dentiva's folder (<code>%LOCALAPPDATA%\Dentiva</code>), which holds the records and the patients' images, as well. Choose No to keep it, so a reinstall finds everything again; choose Yes to erase it. Uninstalling on Windows also removes Dentiva's temporary files, such as documents prepared for sharing. Backups saved to a folder you chose, and backups in Google Drive, are not removed by uninstalling.</li>
+        <li><strong>Old images in Documents</strong> (Windows, in Settings): earlier versions of Dentiva kept patient pictures in your Documents folder, and moved every picture a record uses into Dentiva's own folder. Pictures left there that no record or profile uses are listed, and deleted when a dentist confirms. Only files in Dentiva's own folders, or named the way Dentiva names the pictures it stores, are listed.</li>
         <li><strong>Google Drive backups</strong> can be deleted in the app, or in Google Drive under <em>Settings → Manage apps</em>.</li>
       </ul>
       <p>Dentiva has no online accounts. Staff accounts exist only on the clinic's devices, so there is no online account for us to delete; everything is removed with the controls above.</p>
