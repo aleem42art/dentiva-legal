@@ -303,6 +303,7 @@
       <h2><span class="num">5.</span>Where information is stored</h2>
       <p>Records are kept in a database in Dentiva's private storage on the device. Android keeps this storage separate from other apps, and the device's own storage encryption protects it while the device is locked. Dentiva does not add a separate encryption layer to this database.</p>
       <p>Android's automatic cloud backup of app data is turned off for Dentiva, so the operating system does not copy the database to Google.</p>
+      <p>On a Windows computer, Dentiva keeps the database, patient photos, radiographs, prescription images and profile pictures in a folder of its own in the Windows user account's local application data (<code>%LOCALAPPDATA%\Dentiva</code>). That folder is not part of Documents, so OneDrive's folder backup does not copy it, and Windows does not copy local application data between computers. Other programs running under the same Windows account, and the computer's administrators, can read it, and Dentiva does not add a separate encryption layer; device encryption such as BitLocker protects it while the computer is off. Dentiva's settings and the list of staff accounts are kept separately in Windows' application-data folder for the account. Earlier versions kept images in the Documents folder; the first start of this version moves the ones Dentiva's records use into its own folder, and leaves any picture it did not create where it was.</p>
       <p class="note">We strongly recommend protecting every clinic device with a screen lock and keeping it up to date.</p>
     </section>
 
@@ -392,7 +393,7 @@
         <li><strong>Deleting a radiograph or photo</strong> deletes its image from the device.</li>
         <li><strong>Removing a staff member</strong> deletes their sign-in credentials from the device.</li>
         <li><strong>Factory reset</strong> (in Settings) permanently erases all Dentiva data on the device: records, staff accounts, credentials, settings, photos and files, including the copy of the records Dentiva keeps while it updates its database. Backups saved to a folder you chose, and backups in Google Drive, are not removed by a factory reset.</li>
-        <li><strong>Uninstalling Dentiva</strong> removes its private data from the device. Backups saved to a folder you chose, and backups in Google Drive, are not removed by uninstalling.</li>
+        <li><strong>Uninstalling Dentiva</strong> on Android removes its private data from the device. On Windows, uninstalling leaves Dentiva's folder (<code>%LOCALAPPDATA%\Dentiva</code>) in place, so a reinstall finds the records again; to erase them, run a factory reset before uninstalling, or delete that folder. Backups saved to a folder you chose, and backups in Google Drive, are not removed by uninstalling.</li>
         <li><strong>Google Drive backups</strong> can be deleted in the app, or in Google Drive under <em>Settings → Manage apps</em>.</li>
       </ul>
       <p>Dentiva has no online accounts. Staff accounts exist only on the clinic's devices, so there is no online account for us to delete; everything is removed with the controls above.</p>
